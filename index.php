@@ -1,59 +1,3 @@
-<?php
-	if($_SERVER["REQUEST_METHOD"]=="POST"){
-		$dbhost = "localhost";
-		$dbuser = "root";
-		$dbpass = "Kalyan@23";
-		if($_POST["action"]=="login"){
-		  $username = $_POST["rollno"];
-		  $password = $_POST["pwd"];
-			$style1='"display:block"';
-		  $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
-		  if(! $conn ){
-		    die("Could not connect: ".mysqli_error($conn));
-		  }
-		  //echo "Connected successfully<br/>";
-		  mysqli_select_db($conn, "student_portal");
-		  $sql = "select * from login where ROLLNO = '".$username."';";
-		  $retval = mysqli_query($conn, $sql);
-		  if(!$retval){
-		    die("Could not register".mysqli_error($conn));
-		  }
-		  $result = mysqli_fetch_array($retval);
-		  if($password==$result["PASSWORD"]){
-		    //$msg1 = "Login successful<br/>";
-				session_start();
-				$_SESSION["username"]=$username;
-				$_SESSION["password"]=$password;
-				header('Location:welcome.php');
-		  }
-		  else {
-		    $msg1 = "*Incorrect username or password<br/>";
-		  }
-		  mysqli_close($conn);
-		}
-		else if($_POST["action"]=="register"){
-		  $rollno = $_POST["rollno"];
-		  $name = $_POST["name"];
-		  $password = $_POST["pwd"];
-			$style2='"display:block"';
-		  $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
-		  if(! $conn ){
-		    die("Could not connect: ".mysqli_error($conn));
-		  }
-		  //echo "Connected successfully<br/>";
-		  mysqli_select_db($conn, "student_portal");
-		  $sql = "insert into login(NAME,PASSWORD,ROLLNO) values('".$name."','".$password."','".$rollno."');";
-		  $retval = mysqli_query($conn, $sql);
-		  if(!$retval){
-		    die("Could not register".mysqli_error($conn));
-		  }
-		  $msg2 = "Registered successfully";
-		  mysqli_close($conn);
-		}
-	}
-?>
-
-
 <html>
   <head>
     <title>Learning Curve Foundation</title>
@@ -64,6 +8,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+function verify()
+{
+	if(document.login.email.value=="")
+	{
+		alert("please enter emailid");
+		return false;
+	}
+	if(document.login.pwd.value=="")
+	{
+		alert("please enter password");
+		return false;
+	}
+}
+</script>
   </head>
 
   <body>
@@ -157,15 +116,16 @@
 
     <div id="myModal2" class="modal fade" role="dialog">
       <div class="modal-dialog">
-          <!-- Modal content-->
-        <div class="modal-content">
+          <!-- Modal content -->
+       <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Login</h4>
           </div>
           <div class="modal-body">
+
             <!-- form -->
-            <form action="tlog.php">
+            <form name="login" action="tlog.php" method="post">
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email">
@@ -177,18 +137,25 @@
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
               </div>
-              <?php echo $msg1?>
-            </form>
+
 
           </div>
           <div class="modal-footer">
-						<button type="submit" class="btn btn-default">Submit</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<input type="submit" name="log" value="SUBMIT" onclick="return verify();"></button>
           </div>
+		   </form>
+			 <!--
+			 <form name="login" action="tlog.php" method="POST">
+				 <i>Enter Email: </i>
+				 <input type="text" name="email" value=""/> <br/><br/>
+				 <i>Enter Password: </i>
+				 <input type="password" name="pwd" value=""/> <br/><br/>
+				 <input type="submit" name="log" value="LOGIN" onclick="return verify();"> <br/>
+			 </form>
+		 -->
         </div>
       </div>
     </div>
-
 
     <!-- body -->
     <div class="intro-banner">
@@ -264,3 +231,4 @@
 
   </body>
 </html>
+
