@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Lato';
+	src: local('☺'), url('fonts/Lato-Light.ttf') format('truetype'), url('fonts/Lato-Medium.ttf') format('truetype'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Thin.tff') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+        width : 100%;
+        height : 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family : 'Lato';
+  font-weight: regular;
+	webkit-tap-highlight-color: #222222;
+}
+
+.topnav {
+  font-size: 16px;
+}
+
+.intro-banner {
+    /*padding-bottom: 50px;*/
+    text-align: center;
+    color: #f2f2f2;
+    background: url("../images/wood.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.intro-inner {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-inner > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em;
+}
+
+.intro-inner > h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-heading {
+	color:#f2f2f2;
+	margin-top: 0;
+}
+
+.section-heading-new {
+	color:#222222;
+	margin-top: 0;
+}
+
+.about-bg {
+	background-color: #F05F40;
+	font-size: 16px;
+}
+
+.contact-bg {
+	font-size: 16px;
+}
+
+#map {
+	height: 400px;
+  width: 100%;
+	position: relative;
+}
+
+.modal-content {
+	background-color: #F2F2F2;
+}
