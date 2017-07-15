@@ -132,11 +132,6 @@
                 <input type="text" class="form-control" id="sid">
               </div>
 							<div class="form-group">
-								<label for="text">Iam a:</label>
-								Teacher:<input type="radio" class="form-control" id="rad1">
-								Volunteer:<input type="radio" class="form-control" id="rad2">
-							</div>
-							<div class="form-group">
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd">
               </div>
