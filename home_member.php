@@ -87,11 +87,23 @@
                 </div>
 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                  <h3 class="section-heading">Upload excel sheet here !!</h3>
-                  <button class="btn btn-default" >Upload Excel</button> <br/><br/>
-                  <h3 class="section-heading">Upload assessment data through the form here !!</h3>
-                  <button class="btn btn-default" >Data Form</button>
-                </div>
+                  <h3 class="section-heading">Upload demographic data here !!</h3>
+                  <form name="import" method="post" enctype="multipart/form-data" action="demographicbackend.php">
+                  <input type="file" name="file" /><br />
+                  <input type="submit" name="submit" value="Submit" />
+                  </form>
+
+
+                 <br/><br/>
+                  <h3 class="section-heading">Upload child assessment data !!</h3>
+                  <form name="import" method="post" enctype="multipart/form-data" action="childassessmentbackend.php">
+                  <input type="file" name="file2" /><br />
+                  <input type="submit" name="submit" value="Submit" />
+                  </form>
+                  <h3 class="section-heading">Upload final survey data!!</h3>
+                  <form name="import" method="post" enctype="multipart/form-data" action="surverybackend.php">
+                  <input type="file" name="file3" /><br />
+                  <input type="submit" name="submit" value="Submit" />
 
             </div>
 
