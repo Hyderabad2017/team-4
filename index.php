@@ -123,26 +123,30 @@
                 <label for="text">Email:</label>
                 <input type="email" class="form-control" id="email">
               </div>
-              <div class="form-group">
+							<div class="form-group">
+                <label for="text">Contact Number:</label>
+                <input type="text" class="form-control" id="phno">
+              </div>
+							<div class="form-group">
+                <label for="text">School ID</label>
+                <input type="text" class="form-control" id="sid">
+              </div>
+							<div class="form-group">
+								<label for="text">Iam a:</label>
+								Teacher:<input type="radio" class="form-control" id="rad1">
+								Volunteer:<input type="radio" class="form-control" id="rad2">
+							</div>
+							<div class="form-group">
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd">
               </div>
 							<div class="form-group">
                 <label for="pwd">Confirm Password:</label>
-                <input type="password" class="form-control" id="pwd">
-              </div>
-							<div class="form-group">
-                <label for="pwd">Contact Number:</label>
-                <input type="password" class="form-control" id="cno">
-              </div>
-							<div class="form-group">
-                <label for="pwd">School ID</label>
-                <input type="password" class="form-control" id="sid">
-              </div>
-
+                <input type="password" class="form-control" id="cnf-pwd">
             </form>
+					</div>
 
-          </div>
+					</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						<button type="submit" class="btn btn-default">Submit</button>
@@ -173,13 +177,13 @@
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
               <?php echo $msg1?>
             </form>
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
