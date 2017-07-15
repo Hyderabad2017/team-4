@@ -27,56 +27,242 @@ $sql="insert into classasess values('{$_POST['sid']}',{$_POST['tid']},'{$_POST['
   </head>
 
   <body>
-    <h3>Dream Life Skills Assessment Scale</h3>
+    <form class="form-horizontal">
+<fieldset>
 
-    <form>
-    Name: <input type="text" name="firstname" value="Enter name">
-    <br><br>
-    Gender:<input type="text" name="lastname" value="Gender">
-    <br><br>
-    Name Of Accessor: <input type="text" name="firstofaccess" value="Name of accessor">
-    <br><br>
-    Actual Age: <input type="text" name="age" value="Actual age">
-    <br><br>
-    Age of Appearance: <input type="text" name="appearance" value="Appears as">
-    <br><br>
-    Faces difficulty with any language other than the native language?<input type="radio" name="rad" value="yes" checked> yes
-    <input type="radio" name="rad" value="no"> No<br><br>
-    Interacting with others - appropriate interaction with peers and teachers and having an effective communication:<input type="radio" name="rad1" value="notyet" checked> Not Yet
-    <input type="radio" name="rad1" value="withlotshelp"> Does with lots of help
-    <input type="radio" name="rad1" value="withsomehelp"> Does with some help
-    <input type="radio" name="rad1" value="withlittlehelp"> Does with little help
-    <input type="radio" name="rad1" value="withouthelp"> Does independently
-    <br><br>
-    Overcoming difficulties and solving problems:<input type="radio" name="rad2" value="notyet" checked> Not Yet
-    <input type="radio" name="rad2" value="withlotshelp"> Does with lots of help
-    <input type="radio" name="rad2" value="withsomehelp"> Does with some help
-    <input type="radio" name="rad2" value="withlittlehelp"> Does with little help
-    <input type="radio" name="rad2" value="withouthelp"> Does independently
-    <br><br>
-    Taking initiatives- age appropriate leadership qualities: <input type="radio" name="rad3" value="notyet" checked> Not Yet
-    <input type="radio" name="rad3" value="withlotshelp"> Does with lots of help
-    <input type="radio" name="rad3" value="withsomehelp"> Does with some help
-    <input type="radio" name="rad3" value="withlittlehelp"> Does with little help
-    <input type="radio" name="rad3" value="withouthelp"> Does independently
-    <br><br>
+<!-- Form Name -->
+<legend>Dream Life Skills Assessment Scale</legend>
 
-    Managing Conflict- resolves disagreements?
-    <input type="radio" name="rad2" value="notyet" checked> Not Yet
-    <input type="radio" name="rad2" value="withlotshelp"> Does with lots of help
-    <input type="radio" name="rad2" value="withsomehelp"> Does with some help
-    <input type="radio" name="rad2" value="withlittlehelp"> Does with little help
-    <input type="radio" name="rad2" value="withouthelp"> Does independently
-    <br><br>
-    Understanding and following instructions:<input type="radio" name="rad2" value="notyet" checked> Not Yet
-    <input type="radio" name="rad2" value="withlotshelp"> Does with lots of help
-    <input type="radio" name="rad2" value="withsomehelp"> Does with some help
-    <input type="radio" name="rad2" value="withlittlehelp"> Does with little help
-    <input type="radio" name="rad2" value="withouthelp"> Does independently
-    <br><br>
-        Overall score:<input type="text" name="final" value="Enter the final score">
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name:</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter name">
+  <span class="help-block">help</span>  
+  </div>
+</div>
 
-</html>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Gender">Gender</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Gender-0">
+      <input name="Gender" id="Gender-0" type="radio" checked="checked" value="1">
+      Male
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Gender-1">
+      <input name="Gender" id="Gender-1" type="radio" value="2">
+      Female
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Name Of Accessor:">Name of accessor</label>  
+  <div class="col-md-4">
+  <input name="Name Of Accessor:" class="form-control input-md" id="Name Of Accessor:" type="text" placeholder="your name">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Age">Actual Age</label>  
+  <div class="col-md-4">
+  <input name="Age" class="form-control input-md" id="Age" type="text" placeholder="age of the child">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appearsas">Age Appears as</label>  
+  <div class="col-md-4">
+  <input name="appearsas" class="form-control input-md" id="appearsas" type="text" placeholder="age according to appearance">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios7">Faces difficulty with any language other than the native language?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios7-0">
+      <input name="radios7" id="radios7-0" type="radio" checked="checked" value="1">
+      yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios7-1">
+      <input name="radios7" id="radios7-1" type="radio" value="2">
+      no
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios2">Interacting with others - appropriate interaction with peers and teachers and having an effective communication:</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios2-0">
+      <input name="radios2" id="radios2-0" type="radio" checked="checked" value="1">
+      Not Yet
+    </label> 
+    <label class="radio-inline" for="radios2-1">
+      <input name="radios2" id="radios2-1" type="radio" value="2">
+      Does with lots of help
+    </label> 
+    <label class="radio-inline" for="radios2-2">
+      <input name="radios2" id="radios2-2" type="radio" value="3">
+      Does with some help
+    </label> 
+    <label class="radio-inline" for="radios2-3">
+      <input name="radios2" id="radios2-3" type="radio" value="4">
+      Does with little help
+    </label> 
+    <label class="radio-inline" for="radios2-4">
+      <input name="radios2" id="radios2-4" type="radio" value="5">
+      Does independently
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Overcoming difficulties and solving problems:</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input name="radios" id="radios-0" type="radio" checked="checked" value="1">
+      Not Yet
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="radios" id="radios-1" type="radio" value="2">
+      Does with lots of help
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input name="radios" id="radios-2" type="radio" value="3">
+      Does with some help
+    </label> 
+    <label class="radio-inline" for="radios-3">
+      <input name="radios" id="radios-3" type="radio" value="4">
+      Does with little help
+    </label> 
+    <label class="radio-inline" for="radios-4">
+      <input name="radios" id="radios-4" type="radio" value="">
+      Does independently
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios4">Taking initiatives- age appropriate leadership qualities:</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios4-0">
+      <input name="radios4" id="radios4-0" type="radio" checked="checked" value="1">
+      Not Yet
+    </label> 
+    <label class="radio-inline" for="radios4-1">
+      <input name="radios4" id="radios4-1" type="radio" value="2">
+      Does with lots of help
+    </label> 
+    <label class="radio-inline" for="radios4-2">
+      <input name="radios4" id="radios4-2" type="radio" value="3">
+      Does with some help
+    </label> 
+    <label class="radio-inline" for="radios4-3">
+      <input name="radios4" id="radios4-3" type="radio" value="4">
+      Does with little help
+    </label> 
+    <label class="radio-inline" for="radios4-4">
+      <input name="radios4" id="radios4-4" type="radio" value="">
+      Does independently
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Managing Conflict- resolves disagreements?</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input name="radios" id="radios-0" type="radio" checked="checked" value="1">
+      Not Yet
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="radios" id="radios-1" type="radio" value="2">
+      Does with lots of help
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input name="radios" id="radios-2" type="radio" value="3">
+      Does with some help
+    </label> 
+    <label class="radio-inline" for="radios-3">
+      <input name="radios" id="radios-3" type="radio" value="4">
+      Does with little help
+    </label> 
+    <label class="radio-inline" for="radios-4">
+      <input name="radios" id="radios-4" type="radio" value="">
+      Does independently
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios1">Understanding and following instructions</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios1-0">
+      <input name="radios1" id="radios1-0" type="radio" checked="checked" value="1">
+      Not Yet
+    </label> 
+    <label class="radio-inline" for="radios1-1">
+      <input name="radios1" id="radios1-1" type="radio" value="2">
+      Does with lots of help
+    </label> 
+    <label class="radio-inline" for="radios1-2">
+      <input name="radios1" id="radios1-2" type="radio" value="3">
+      Does with some help
+    </label> 
+    <label class="radio-inline" for="radios1-3">
+      <input name="radios1" id="radios1-3" type="radio" value="4">
+      Does with little help
+    </label> 
+    <label class="radio-inline" for="radios1-4">
+      <input name="radios1" id="radios1-4" type="radio" value="5">
+      Does independently
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput2">Final Input</label>  
+  <div class="col-md-4">
+  <input name="textinput2" class="form-control input-md" id="textinput2" type="text" placeholder="Score between 1-5 based on the average">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button name="button1id" class="btn btn-default" id="button1id">Submit</button>
+    <button name="button2id" class="btn btn-inverse" id="button2id">Cancel</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+      </html>
+
+   
