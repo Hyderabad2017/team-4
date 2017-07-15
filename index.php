@@ -99,9 +99,7 @@
                   </li>
               </ul>
           </div>
-          <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
     </nav>
 
     <div id="myModal1" class="modal fade" role="dialog">
@@ -117,6 +115,7 @@
             <form action="<?php $PHP_SELF?>">
               <div class="form-group">
                 <label for="text">Name:</label>
+								
                 <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
@@ -193,8 +192,11 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">About Us!</h2>
                     <hr class="light">
-                    <p class="section-heading">].</p>
-                </div>
+                    <p class="section-heading">We care about one simple thing – regardless of economic status, every child has the right to realize one’s own potential as a human being.We wish to see each child emotionally balanced, self-aware, resilient and able to make informed choices in life.</p>
+										<h3 class="section-heading">Our Story</h3>
+										<hr class="light">
+										<p class="section-heading">When Learning Curve began its journey in 2011, we knew well what we wanted to do, but we didn’t know how. That’s when it began – the journey of self-reflection, research, numerous interactions with educationists, psychologists and other experts. It took us nearly two years to arrive at what we believed was a comprehensive life skills development program that would enable children to be psychologically, emotionally and socially healthy. Whenever we came across children who were marginalized in any form, our story started taking shape. It was in our third year that we were able to realize the power of life skills – when we walked into a children’s home of 40 girls for a visit. As we started working with these girls every weekend for over a year, we realized that more than academics, these children needed help with their overall self-esteem, identity, expression, self-confidence and the opportunity to realize their own potential. As we continued our work with several communities, organizations and children, the concept of emotional and social development resonated with us very strongly. It is the process through which children and acquire and effectively apply the knowledge, attitudes, and skills necessary to understand and manage emotions, set and achieve positive goals, feel and show empathy for others, establish and maintain positive relationships, and make responsible decisions. And that’s where our story began again – in the form of Learning Curve Life Skills Foundation.</p>
+								</div>
             </div>
         </div>
     </section>
@@ -203,17 +205,17 @@
         <div class="container contact-bg">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading-new">Let's Get In Touch!</h2>
+                    <h2 class="section-heading-new">Reach out!</h2>
                     <hr class="primary">
                     <p>Have any problem? Well! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                   <span class="glyphicon glyphicon-earphone"></span>
-                    <p>040-659356</p>
+                    <p>+91 9849 744 836, +91 9177 771 681 </p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <span class="glyphicon glyphicon-envelope"></span>
-                    <p><a href="mailto:your-email@your-domain.com">somerandom@cbit.ac.in</a></p>
+                    <p><a href="mailto:bethelight@learning-curve-foundation.org">bethelight@learning-curve-foundation.org</a></p>
                 </div>
             </div>
         </div>
