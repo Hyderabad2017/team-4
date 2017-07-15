@@ -1,6 +1,3 @@
-
-
-
 <html>
   <head>
     <title>Learning Curve Foundation</title>
@@ -131,11 +128,11 @@ function verify()
             <form name="login" action="tlog.php" method="post">
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" name="email">
               </div>
               <div class="form-group">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
+                <input type="password" class="form-control" name="pwd">
               </div>
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
@@ -232,3 +229,4 @@ function verify()
 
   </body>
 </html>
+
