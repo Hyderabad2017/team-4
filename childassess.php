@@ -27,10 +27,13 @@ $sql="insert into classasess values('{$_POST['sid']}',{$_POST['tid']},'{$_POST['
   </head>
 
   <body>
+    <div class="container">
     <h3>Dream Life Skills Assessment Scale</h3>
 
-    <form>
-    Name: <input type="text" name="firstname" value="Enter name">
+    <form action=>
+      <div class="form-group">
+        <label for="text">Name:</label> <input type="text" class="" name="firstname" value="Enter name">
+      </div>
     <br><br>
     Gender:<input type="text" name="lastname" value="Gender">
     <br><br>
@@ -77,6 +80,7 @@ $sql="insert into classasess values('{$_POST['sid']}',{$_POST['tid']},'{$_POST['
         Overall score:<input type="text" name="final" value="Enter the final score">
       <input type="submit" value="Submit">
     </form>
+  </div>
   </body>
 
 </html>

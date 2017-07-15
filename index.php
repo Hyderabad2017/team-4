@@ -1,3 +1,6 @@
+
+
+
 <html>
   <head>
     <title>Learning Curve Foundation</title>
@@ -8,22 +11,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script>
-function verify()
-{
-	if(document.login.email.value=="")
-	{
-		alert("please enter emailid");
-		return false;
-	}
-	if(document.login.pwd.value=="")
-	{
-		alert("please enter password");
-		return false;
-	}
-}
-</script>
-  </head>
+		function verify()
+		{
+			if(document.login.email.value=="")
+			{
+				alert("please enter emailid");
+				return false;
+			}
+			if(document.login.pwd.value=="")
+			{
+				alert("please enter password");
+				return false;
+			}
+		}
+	</script>
+</head>
 
   <body>
 
@@ -72,7 +76,7 @@ function verify()
           </div>
           <div class="modal-body">
             <!-- form -->
-            <form action="<?php $PHP_SELF?>">
+            <form name="signup" action="<?php $PHP_SELF?>">
               <div class="form-group">
                 <label for="text">Name:</label>
 
@@ -229,4 +233,3 @@ function verify()
 
   </body>
 </html>
-
