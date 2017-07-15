@@ -140,13 +140,11 @@ function verify()
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
               </div>
-
-
-          </div>
-          <div class="modal-footer">
-						<input type="submit" name="log" value="SUBMIT" onclick="return verify();"></button>
-          </div>
-		   </form>
+          	</div>
+          	<div class="modal-footer">
+							<input type="submit" name="log" value="SUBMIT" onclick="return verify();"></button>
+          	</div>
+		   	</form>
 			 <!--
 			 <form name="login" action="tlog.php" method="POST">
 				 <i>Enter Email: </i>
