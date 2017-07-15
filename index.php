@@ -165,7 +165,7 @@
           </div>
           <div class="modal-body">
             <!-- form -->
-            <form action="<?php $PHP_SELF?>">
+            <form action="tlog.php">
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email">
