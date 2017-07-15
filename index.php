@@ -118,18 +118,17 @@ function verify()
     </div>
 
     <div id="myModal2" class="modal fade" role="dialog">
-      <div class="modal-dialog"> 
+      <div class="modal-dialog">
           <!-- Modal content -->
        <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Login</h4>
           </div>
-          <div class="modal-body"> 
-		  
+          <div class="modal-body">
+
             <!-- form -->
-			<!--
-            <form action="tlog.php" method="post">
+            <form name="login" action="tlog.php" method="post">
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email">
@@ -141,26 +140,22 @@ function verify()
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
               </div>
-              
-           
+
+
           </div>
-          <div class="modal-footer"> 
-						<input type="submit" name="sub" value="SUBMIT" onclick="return verify();"></button>
+          <div class="modal-footer">
+						<input type="submit" name="log" value="SUBMIT" onclick="return verify();"></button>
           </div>
-		   </form> -->
-		   <form name="login" action="tlog.php" method="POST">
-	
-		
-		<i>Enter Email: </i>
-			<input type="text" name="email" value=""/> <br/><br/>
-
-		<i>Enter Password: </i>
-			<input type="password" name="pwd" value=""/> <br/><br/>
-
-		<input type="submit" name="log" value="LOGIN" onclick="return verify();"> <br/>
-
-	</form>
-
+		   </form>
+			 <!--
+			 <form name="login" action="tlog.php" method="POST">
+				 <i>Enter Email: </i>
+				 <input type="text" name="email" value=""/> <br/><br/>
+				 <i>Enter Password: </i>
+				 <input type="password" name="pwd" value=""/> <br/><br/>
+				 <input type="submit" name="log" value="LOGIN" onclick="return verify();"> <br/>
+			 </form>
+		 -->
         </div>
       </div>
     </div>
