@@ -14,6 +14,8 @@ if($row=mysqli_fetch_array($res))
 }
 else
 {
+			header("location:index.php");
+
 	echo '<script>alert("Oops! Invalid Username or Password");</script>';
 }
 
