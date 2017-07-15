@@ -10,7 +10,7 @@ $conn = mysqli_connect("$hostname","$username","$password") or die(mysqli_error(
 mysqli_select_db($conn,"$database") or die(mysqli_error());
 if(isset($_POST["submit"]))
 {
-$file = $_FILES['file']['tmp_name'];
+$file = $_FILES['file2']['tmp_name'];
 $handle = fopen($file, "r");
 $c = 0;
 while(($filesop = fgetcsv($handle, 1000, ","))!== false)
