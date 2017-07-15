@@ -77,12 +77,13 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="#">Learning Curve Foundation</a>
+               <a class="navbar-brand page-scroll" href="#">Learning Curve Foundation</a>
+							<!-- <h2 class="navbar-brand brand-name"> <a href="index.php"><img class="img-responsive" src="images/Learinng-curve-web.png"></a> </h2> -->
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
+							<ul class="nav navbar-nav navbar-right">
                   <li><a href="#myModal1" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                   <li><a href="#myModal2" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               </ul>
@@ -115,7 +116,7 @@
             <form action="<?php $PHP_SELF?>">
               <div class="form-group">
                 <label for="text">Name:</label>
-								
+
                 <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
@@ -126,12 +127,25 @@
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd">
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+							<div class="form-group">
+                <label for="pwd">Confirm Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+							<div class="form-group">
+                <label for="pwd">Contact Number:</label>
+                <input type="password" class="form-control" id="cno">
+              </div>
+							<div class="form-group">
+                <label for="pwd">School ID</label>
+                <input type="password" class="form-control" id="sid">
+              </div>
+
             </form>
 
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-default">Submit</button>
           </div>
         </div>
       </div>

@@ -1,3 +1,6 @@
+
+
+
 <html>
   <head>
     <title>Learning Curve Foundation</title>
@@ -11,9 +14,6 @@
   </head>
 
   <body>
-
-    <!-- navigation bar -->
-
     <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,23 +26,12 @@
 
           <div class="collapse navbar-collapse" id="#navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.php" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-log-out"></span>Login</a></li>
-              </ul>
-
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#location">Location</a>
-                  </li>
+                  <li><a href="index.php" ><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
               </ul>
           </div>
       </div>
     </nav>
+    
 
   </body>
 </html>
