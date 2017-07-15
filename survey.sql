@@ -1,4 +1,6 @@
 CREATE TABLE `survey` (
+`school` varchar(11),
+`class` varchar(11),
 `q1` int,
 `q2` int,
 `q3` int,
