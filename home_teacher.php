@@ -35,14 +35,14 @@
     <div class="container content-heading">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-left">
-              <h1>Welcome 
-			  <?php 
+              <h1>Welcome
+			  <?php
 			  $username=$_REQUEST['name'];
 			  //session_start();
                //	header("location:welcome.php?name=".$_REQUEST["uname"]);
 		echo $username."!";
 		?>
-				
+
 				</h1></br>
           </div>
         </div>
@@ -64,23 +64,16 @@
                 </div>
 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                  <h3 class="section-heading">Upload demographic data here !!</h3>
-                  <form name="import" method="post" enctype="multipart/form-data" action="demographicbackend.php">
-                  <input type="file" name="file" /><br />
-                  <input type="submit" name="submit" value="Submit" />
-                  </form>
+                <h3 class="section-heading">Upload demographic data here !!</h3>
+                <form name="import" method="post" enctype="multipart/form-data" action="demographicbackend.php">
+                <input type="file" name="file" /><br />
+                <input type="submit" name="submit" value="Submit" />
+                </form>
 
-
-                 <br/><br/>
-                  <h3 class="section-heading">Upload child assessment data !!</h3>
-                  <form name="import" method="post" enctype="multipart/form-data" action="childassessmentbackend.php">
-                  <input type="file" name="file" /><br />
-                  <input type="submit" name="submit" value="Submit" />
-                  </form>
-                  <h3 class="section-heading">Upload final survey data!!</h3>
-                  <form name="import" method="post" enctype="multipart/form-data" action="surverybackend.php">
-                  <input type="file" name="file" /><br />
-                  <input type="submit" name="submit" value="Submit" />
+                <h3 class="section-heading">Upload demographic data through form here !!</h3>
+                <form type="submit" action="demographic.php">
+                <button class="btn btn-default">Data Form</button>
+                </div>
                 </div>
 
             </div>
@@ -100,43 +93,15 @@
                     </p>
                 </div>
 
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                  <h3 class="section-heading">Upload excel sheet here !!</h3>
-                  <button class="btn btn-default" >Upload Excel</button> <br/><br/>
-                  <h3 class="section-heading">Upload assessment data through the form here !!</h3>
-                  <button class="btn btn-default" >Data Form</button>
+                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                  <h3 class="section-heading">Upload child assessment data !!</h3>
+                  <form name="import" method="post" enctype="multipart/form-data" action="childassessmentbackend.php">
+                  <input type="file" name="file2" /><br />
+                  <input type="submit" name="submit" value="Submit" />
                 </div>
-
-            </div>
-
+              </div>
         </div>
+      </div>
     </div>
-  </div>
-
-  <!-- Content row 3
-  <div class="content-section-a">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-5 col-sm-6">
-                <div class="clearfix"></div>
-
-                <h1 class="section-heading">Student filled classroom survey !!</h1>
-                <p class="lead">
-                    You can upload the excel doc for student filled classroom survey data of students here using the 'upload excel' option. Or you can upload each student choices directly using the form.
-                </p>
-            </div>
-
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-              <h3 class="section-heading">Upload excel sheet here !!</h3>
-              <button class="btn btn-default" >Upload Excel</button> <br/><br/>
-              <h3 class="section-heading">Upload demographic data through form here !!</h3>
-              <button class="btn btn-default" >Data Form</button>
-            </div>
-
-        </div>
-    </div>
-  </div> -->
-
   </body>
 </html>
