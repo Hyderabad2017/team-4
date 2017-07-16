@@ -1,5 +1,8 @@
 <?php
-
+$studentid=$_REQUEST['student'];
+$conn=mysqli_connect("localhost","root","Kalyan@23") or die("couldnt connect".mysqli_error());
+mysqli_select_db($conn,"learning") or die("couldnt select database".mysqli_error());
+$res=mysqli_query($conn,"select * from dstudent");
 
 ?>
 
@@ -56,29 +59,34 @@
     <div class="container">
       <h2>Student details</h2>
       <table id="customers" class="table table-hover">
-      <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
+        <tbody>
           <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
+                <td>Student id</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Parental status</td>
+                <td>Family Income</td>
+                <td>Parents Education</td>
+                <td>Siblings</td>
+                <td>Family type</td>
+                <td>Order of birth</td>
           </tr>
+            <?php while (list($stuid,$sname,$sgender,$sage,$sps,$soob,$safmin,$spedul,$ssiblings,$sfamilytype)=mysqli_fetch_array($res)) {
+               ?>
+               <tr>
+                  <td><?php echo $stuid?></td>
+                  <td><?php echo $sname?></td>
+                  <td><?php echo $sgender?></td>
+                  <td><?php echo $sage?></td>
+                  <td><?php echo $sps?></td>
+                  <td><?php echo $safmin?></td>
+                  <td><?php echo $spedul?></td>
+                  <td><?php echo $ssiblings?></td>
+                  <td><?php echo $sfamilytype?></td>
+                  <td><?php echo $soob?></td>
+                </tr>
+              <?php } ?>
         </tbody>
       </table>
     </div>
@@ -94,7 +102,7 @@
 
                   <h1 class="section-heading">Students data assessment !!</h1>
 
-                  <form class="form-inline" name="import" action="">
+                  <form class="form-inline" name="import" action="<??>">
                     <div class="form-group">
                       <label for="email">Student Id:</label>
                       <input type="text" name="student" id="sid"/>
@@ -120,7 +128,7 @@
           labels: ["Interaction", "Overcoming difficulty", "Initiation", "Conflict Management", "Understanding"],
           datasets: [{
             label: '#Rating',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [1, 1, 3, 4, 2],
             backgroundColor: [
                 '#00a3cc',
                 '#00a3cc',
