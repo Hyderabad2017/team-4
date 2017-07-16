@@ -45,11 +45,12 @@ section {
 
 .content-section-a {
     padding: 30px 0;
-    background-color: #f2f2f2;
+    background-color: #e3e3e3;
 }
 
 .content-section-b {
     padding: 30px 0;
+    background-color: #F05F40;
     border-top: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
 }
@@ -64,4 +65,27 @@ section {
 /* Little paragraph snippet sections */
 .section-heading {
     margin-bottom: 30px;
+}
+
+#canvas {
+  width : 60%;
+  height : 100px;
+  position : relative;
+}
+
+#imaginary_container{
+    margin-top:20%;
+    padding-bottom: 30px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
 }

@@ -41,6 +41,7 @@
                echo $username."!";?></h1></br>
           </div>
         </div>
+      </div>
 
       <!-- Content row 1 -->
       <div class="content-section-a">
@@ -59,18 +60,17 @@
                 </div>
 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <h3 class="section-heading">Upload demographic data here !!</h3>
-                <form name="import" method="post" enctype="multipart/form-data" action="demographicbackend.php">
-                <input type="file" name="file" /><br />
-                <input type="submit" name="submit" value="Submit" />
-                </form>
+                  <h3 class="section-heading">Upload demographic data here !!</h3>
+                  <form name="import" method="post" enctype="multipart/form-data" action="demographicbackend.php">
+                    <input type="file" name="file" /><br />
+                    <input type="submit" name="submit" value="Submit" />
+                  </form>
 
-                <h3 class="section-heading">Upload demographic data through form here !!</h3>
-                <form type="submit" action="demographic.php">
-                  <button class="btn btn-default">Data Form</button>
-                </form>
+                  <h3 class="section-heading">Upload demographic data through form here !!</h3>
+                  <form type="submit" action="demographic.php">
+                    <button class="btn btn-default">Data Form</button>
+                  </form>
                 </div>
-
             </div>
         </div>
     </div>
