@@ -67,7 +67,8 @@
 
                 <h3 class="section-heading">Upload demographic data through form here !!</h3>
                 <form type="submit" action="demographic.php">
-                <button class="btn btn-default">Data Form</button>
+                  <button class="btn btn-default">Data Form</button>
+                </form>
                 </div>
 
             </div>
@@ -117,13 +118,37 @@
             </form>
               <h3 class="section-heading">Upload final survey data!!</h3>
               <form name="import" method="post" enctype="multipart/form-data" action="surverybackend.php">
-              <input type="file" name="file3" /><br />
-              <input type="submit" name="submit" value="Submit" />
+                <input type="file" name="file3" /><br />
+                <input type="submit" name="submit" value="Submit" />
+            </form>
             </div>
 
         </div>
     </div>
-</div>
+  </div>
+
+  <div class="content-section-b">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-5 col-sm-6">
+                  <div class="clearfix"></div>
+                  <h1 class="section-heading">You can visualize the data here!</h1>
+                  <p class="lead">
+                      You can view the visualized data of students !!.
+                  </p>
+              </div>
+
+               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <h3 class="section-heading">See it here !!</h3>
+                <form type="submit" action="visualize.php">
+                  <button class="btn btn-default">View</button>
+                </form>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
