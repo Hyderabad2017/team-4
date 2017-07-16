@@ -35,13 +35,7 @@
     <div class="container content-heading">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-left">
-              <h1>Welcome
-			  <?php
-			  $username=$_REQUEST['name'];
-			  //session_start();
-               //	header("location:welcome.php?name=".$_REQUEST["uname"]);
-		echo $username."!";
-		?>
+              <h1>Welcome <?php $username=$_REQUEST['name']; echo $username."!";?>
 
 				</h1></br>
           </div>
