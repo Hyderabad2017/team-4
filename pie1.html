@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+
+<div id="piechart"></div>
+<div id="piechart2"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['interaction', 2],
+  ['taking initiative', 1],
+  ['managing conflict', 4],
+  ['understanding and following ', 2],
+  ['overcoming difficulties', 3]
+]);
+
+  
+  var options = {'title':'student assessment 2016', 'width':550, 'height':400};
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+
+<script type="text/javascript">
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['interaction', 3],
+  ['taking initiative', 2],
+  ['managing conflict', 1],
+  ['understanding and following ', 3],
+  ['overcoming difficulties', 4]
+]);
+
+  
+  var options = {'title':'student assessment 2017', 'width':550, 'height':400};
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
