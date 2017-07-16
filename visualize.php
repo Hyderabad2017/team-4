@@ -4,6 +4,11 @@ $conn=mysqli_connect("localhost","root","Kalyan@23") or die("couldnt connect".my
 mysqli_select_db($conn,"learning") or die("couldnt select database".mysqli_error());
 $res=mysqli_query($conn,"select * from dstudent");
 
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  $parse_id = $_REQUEST['import'];
+  $res=mysqli_query($conn,"select * from dstudent");
+  list($stuid,$sname,$sgender,$sage,$sps,$soob,$safmin,$spedul,$ssiblings,$sfamilytype)=mysqli_fetch_array($res);
+}
 ?>
 
 <html>
@@ -83,8 +88,8 @@ $res=mysqli_query($conn,"select * from dstudent");
                   <td><?php echo $safmin?></td>
                   <td><?php echo $spedul?></td>
                   <td><?php echo $ssiblings?></td>
-                  <td><?php echo $sfamilytype?></td>
                   <td><?php echo $soob?></td>
+                  <td><?php echo $sfamilytype?></td>
                 </tr>
               <?php } ?>
         </tbody>
@@ -102,14 +107,24 @@ $res=mysqli_query($conn,"select * from dstudent");
 
                   <h1 class="section-heading">Students data assessment !!</h1>
 
-                  <form class="form-inline" name="import" action="<??>">
+                  <form class="form-inline" name="import" action="<?php $PHP_SELF?>" method="post">
                     <div class="form-group">
                       <label for="email">Student Id:</label>
                       <input type="text" name="student" id="sid"/>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
                   </form>
-              </div>
+
+                  <div class="panel panel-default">
+                        <div class="panel-heading">Student Profile :</div>
+                        <div class="panel-body">
+                            <?php list($stuid,$sname,$sgender,$sage,$sps,$soob,$safmin,$spedul,$ssiblings,$sfamilytype)=mysqli_fetch_array($res)?>
+                            <h3>Name: </h3> <?php echo $sname?>
+                            <h3>Gender: </h3> <?php echo $sgender?>
+                            <h3>Age: </h3> <?php echo $sage?>
+                        </div>
+                  </div>
+                </div>
 
               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <canvas id="myChart" width="150px" height="150px"></canvas>
@@ -178,6 +193,14 @@ $res=mysqli_query($conn,"select * from dstudent");
 		      }
 	   }
 	 </script>
+
+   <script>
+    function myFunc() {
+      var inp;
+      inp = document.getElementById("sid");
+
+    }
+   </script>
 
 </body>
 </html>
